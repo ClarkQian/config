@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "task g++",    //修改此项
+            "command": "D:\\Software\\devcpp\\Dev-cpp5.4.0及API帮助文档\\Dev-Cpp\\MinGW32\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\Software\\devcpp\\Dev-cpp5.4.0及API帮助文档\\Dev-Cpp\\MinGW32\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
